@@ -1,9 +1,6 @@
 package com.jmedia.jweb.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -11,9 +8,10 @@ import java.sql.Timestamp;
 
 @Data
 @Entity
-@Table(name = "juser")
-public class JUser {
+@Table(name = "jusers")
+public class JUsers {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @CreationTimestamp
