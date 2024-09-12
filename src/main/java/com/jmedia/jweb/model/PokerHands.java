@@ -22,7 +22,7 @@ import java.sql.Timestamp;
 @Table(name = "poker_hands")
 public class PokerHands {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String hash;
     private String cards;

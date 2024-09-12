@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 @Table(name = "jusers")
 public class JUsers {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @CreationTimestamp
